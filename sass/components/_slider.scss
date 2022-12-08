@@ -1,0 +1,111 @@
+.section-title-slider {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  & span {
+    color: $secondary-color;
+  }
+
+  @media screen and (min-width: 800px) {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+}
+.swiper {
+  min-width: 340px;
+  max-width: 1256px;
+  height: 465px;
+  padding: 0 10px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: red !important;
+}
+
+.swiper-button-prev:after {
+  content: "";
+  left: auto !important;
+  right: 59px !important;
+  top: 20px !important;
+
+  background-image: url("../images/left.svg");
+  background-size: contain;
+  width: 28px !important;
+  height: 28px !important;
+  background-color: $accent-color !important;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after {
+  content: "";
+  background-image: url("../images/right.svg");
+  background-size: contain;
+  width: 28px !important;
+  height: 28px !important;
+  background-color: $accent-color !important;
+  border-radius: 50%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @media screen and (max-width: 1070px) {
+    display: none !important;
+  }
+}
+
+.swiper-pagination {
+  @media screen and (min-width: 1070px) {
+    display: none;
+  }
+}
+
+.slider-list-items {
+  position: relative;
+  box-sizing: border-box;
+  height: 372px !important;
+  padding: 20px !important;
+  background-color: $secondary-bg-color;
+
+  & span {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.3;
+    color: $bg-color;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 1px;
+    display: block;
+    width: 106px;
+    height: 126px;
+    border-radius: 236px 0 0 0;
+    background-color: $bg-circle;
+  }
+}
+
+.slider-list-title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.5;
+  color: $primary-text-color;
+}
+
+.slider-list-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.0025em;
+  color: $primary-text-color;
+}

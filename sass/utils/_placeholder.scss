@@ -1,0 +1,13 @@
+%title {
+  color: $primary-text-color;
+  margin-bottom: 10px;
+}
+
+%input-text-stile {
+  margin: 4px 0 0;
+  padding: 12px 12px 12px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: $animation;
+}
